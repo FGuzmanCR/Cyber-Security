@@ -1,0 +1,13 @@
+nmap -O dirección IP con máscara		Se hace un escaneo a la totalidad de la red (-O es para intentar conocer el OS de los equipos) - dura bastante depende la cantidad de equipos en la red.
+nmap -p- -sVC  -sC --open -sS -vvv -n -Pn + IP -oN + nombre del fichero para guardar los datos
+-p- : Puertos abiertos
+-sVC : Versión que corren en los puertos
+-sC : 
+--open : abiertos
+-sS
+-vvv
+-n
+-Pn
+-oN
+
+sudo nmap -sV -script vuln [IP] -v’
